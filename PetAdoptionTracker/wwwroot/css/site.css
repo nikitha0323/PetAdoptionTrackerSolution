@@ -1,0 +1,79 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+/* Dark theme */
+html[data-theme="dark"] body {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+html[data-theme="dark"] .navbar,
+html[data-theme="dark"] footer,
+html[data-theme="dark"] .card {
+    background-color: #1f1f1f !important;
+    color: #f1f1f1 !important;
+}
+
+    html[data-theme="dark"] .navbar-brand,
+    html[data-theme="dark"] .navbar .nav-link,
+    html[data-theme="dark"] .text-muted {
+        color: #dddddd !important;
+    }
+
+html[data-theme="dark"] a:not(.btn) {
+    color: #90c9ff;
+}
+
+html[data-theme="dark"] .table {
+    --bs-table-bg: #1f1f1f;
+    --bs-table-color: #f1f1f1;
+    --bs-table-border-color: #555555;
+    color: #f1f1f1;
+    background-color: #1f1f1f;
+}
+
+html[data-theme="dark"] input,
+html[data-theme="dark"] select,
+html[data-theme="dark"] textarea {
+    background-color: #292929;
+    color: #f1f1f1;
+    border-color: #777777;
+}
+
+    html[data-theme="dark"] input::placeholder,
+    html[data-theme="dark"] textarea::placeholder {
+        color: #bbbbbb;
+    }
+
+html[data-theme="dark"] .btn-outline-primary {
+    color: #90c9ff;
+    border-color: #90c9ff;
+}
+
+    html[data-theme="dark"] .btn-outline-primary:hover {
+        background-color: #90c9ff;
+        color: #121212;
+    }
+
+html[data-theme="dark"] .navbar-toggler-icon {
+    filter: invert(1);
+}
